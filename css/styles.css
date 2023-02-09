@@ -34,6 +34,8 @@
     --main-text-color-second: #FFFFFF;
     --backdrop: #00000033;
     --close-button-modal: #0000001a;
+    --sign-in-button-bg: #2196F3;
+    --border-form-footer: #ffffff4d;
 
 }
 
@@ -872,6 +874,140 @@ img {
     align-items: baseline;
     gap: 70px;
 }
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 93px;
+}
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    
+    
+        
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+        
+    background-color: var(--sign-in-button-bg);
+    color: var(--background-color-body);
+        
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.sign-in-button:hover,
+.sign-in-button:focus {
+    background-color: var(--background-color-hero-button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.sign-in-icon {
+    fill: currentColor;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.footer-label {
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1em;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--main-text-color-second);
+}
+
+
+.input-sign-in {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+
+    border: 1px solid;
+    border-color: var(--border-form-footer);
+    background-color: var(--background-color-second);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
+}
+
+.input-sign-in::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    
+    color: var(--color-contacts-footer);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*modal-window*/
 
