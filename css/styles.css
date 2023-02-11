@@ -1073,14 +1073,10 @@ img {
         color: var(--color-heading);
 }
 
-
-
 .modal-flex {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
- 
 }
 
 .modal-label,
@@ -1093,7 +1089,6 @@ img {
     
     color: var(--main-text-color);
     margin-bottom: 4px;
-
 }
 
 .modal-icon {
@@ -1101,6 +1096,8 @@ img {
     top: 50%;
     left: 12px;
     transform: translatey(-50%);
+    /*fill: var(--color-header-menu);*/
+    fill: var(--color-heading);
 }
 
 .field-modal {
@@ -1121,10 +1118,11 @@ img {
     
     border-radius: 4px;
     border: 1px solid;
-        
+
+
+    color:var(--color-header-menu) ;
     border-color: var(--color-modal-border);
     background-color: var(--background-color-body);
-    
 }
 
 .modal-comment {
@@ -1143,8 +1141,20 @@ img {
     color: var(--color-modal-placeholder);
 }
 
+.modal-input:hover,
+.modal-input:focus,
+.modal-comment:hover,
+.modal-comment:focus {
+    border-color: var(--background-color-hero-button);
+}
+
+.modal-input:hover+.modal-icon,
+.modal-input:focus+.modal-icon {
+    fill: var(--background-color-hero-button); 
+}
 
 .checkbox-line {
+    
     margin-bottom: 30px;
 }
 
@@ -1154,10 +1164,40 @@ img {
 
 
 
+.checkbox-field { 
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--color-heading);
+  
+}
+
+/*.icon-check {
+ 
+}*/
 
 
 
 
+.policy-description,
+.contract {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    
+    color: var(--main-text-color);
+    
+}
+
+.contract {
+    padding-left: 4px;
+    color: var(--color-web-logo);
+}
 
 .modal-button {
     display:block;
@@ -1166,7 +1206,6 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
-
 }
 
 
